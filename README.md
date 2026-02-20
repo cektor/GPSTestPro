@@ -193,7 +193,7 @@ Built from scratch using **Kotlin** and **Jetpack Compose** with a modern MVVM a
 1. **Clone the repository**
    ```bash
    git clone https://github.com/cektor/GPSTestPro.git
-   cd gps-test-pro
+   cd GPSTestPro
    ```
 
 2. **Open in Android Studio**

@@ -193,7 +193,7 @@
 1. **Depoyu klonlayın**
    ```bash
    git clone https://github.com/cektor/GPSTestPro.git
-   cd gps-test-pro
+   cd GPSTestPro
    ```
 
 2. **Android Studio'da açın**
