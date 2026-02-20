@@ -8,15 +8,40 @@
 
 ### 1. Introduction
 
-GPS Test Pro ("Application", "we", "us", or "our") operates the GPS Test Pro mobile application. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Application and the choices you have associated with that data.
+GPS Test Pro (\"Application\", \"we\", \"us\", or \"our\") operates the GPS Test Pro mobile application.
 
-We use your data to provide and improve the Application. By using the Application, you agree to the collection and use of information in accordance with this policy.
+**⚠️ IMPORTANT NOTICE: GPS Test Pro does NOT collect, store, or transmit any personal user data whatsoever.**
 
-### 2. Information Collection and Use
+All data processing occurs exclusively on your device. We do not collect, use, share, or store any personal information about you. This application is designed with privacy-first principles and contains no tracking, analytics, or user profiling of any kind.
 
-#### 2.1 Location Data
+### 2. NO PERSONAL DATA COLLECTION - CLEAR STATEMENT
 
-**What we collect:**
+**GPS Test Pro DOES NOT collect any personal user data.**
+
+We are absolutely clear and transparent: GPS Test Pro does not collect, store, transmit, or share any personal information about you. This includes:
+
+- ❌ No names, email addresses, or contact information
+- ❌ No user accounts or authentication data
+- ❌ No browsing history or usage patterns
+- ❌ No device identifiers or advertising IDs
+- ❌ No analytics or crash reports
+- ❌ No tracking cookies or pixels
+- ❌ No personal preferences or settings (except local app settings)
+- ❌ No demographic information
+- ❌ No behavioral data
+- ❌ No data sharing with third parties
+- ❌ No user profiling
+- ❌ No telemetry
+
+**All data is processed locally on your device only. Nothing is transmitted to any external server.**
+
+### 3. LOCAL-ONLY DATA PROCESSING
+
+The following technical data is processed ONLY on your device for application functionality:
+
+#### 3.1 Location Data (Local Only)
+
+**What we process locally:**
 - GPS coordinates (latitude, longitude)
 - Altitude information
 - Speed and bearing data
@@ -35,10 +60,11 @@ We use your data to provide and improve the Application. By using the Applicatio
 - Maximum 100 location points are retained in memory
 - Data is cleared when the application is closed
 - No location data is transmitted to external servers
+- No location data is stored permanently
 
-#### 2.2 GNSS/Satellite Data
+#### 3.2 GNSS/Satellite Data (Local Only)
 
-**What we collect:**
+**What we process locally:**
 - Satellite ID (SVID)
 - Constellation type (GPS, GLONASS, GALILEO, BEIDOU, QZSS, IRNSS, SBAS)
 - Signal strength (CN0 dB-Hz)
@@ -58,10 +84,11 @@ We use your data to provide and improve the Application. By using the Applicatio
 - Satellite data is processed in real-time only
 - No satellite data is stored permanently
 - Data is cleared when GPS updates stop
+- No satellite data is transmitted anywhere
 
-#### 2.3 Sensor Data
+#### 3.3 Sensor Data (Local Only)
 
-**What we collect:**
+**What we process locally:**
 - Accelerometer readings
 - Magnetometer (compass) readings
 - Sensor accuracy status
@@ -75,9 +102,9 @@ We use your data to provide and improve the Application. By using the Applicatio
 - Sensor data is processed in real-time only
 - No sensor data is stored or transmitted
 
-#### 2.4 Device Information
+#### 3.4 Device Information (Local Only)
 
-**What we collect:**
+**What we process locally:**
 - Device model and manufacturer
 - Android OS version
 - Application version
@@ -91,85 +118,97 @@ We use your data to provide and improve the Application. By using the Applicatio
 **Data retention:**
 - Device information is not stored
 - Used only during active application session
+- Not transmitted anywhere
 
-### 3. Permissions Explanation
+### 4. Permissions Explanation
 
 The Application requests the following permissions:
 
-#### 3.1 Location Permissions
+#### 4.1 Location Permissions
 
 **ACCESS_FINE_LOCATION**
 - Purpose: Access precise GPS location data
 - Used for: Real-time location tracking and satellite signal analysis
+- Data shared: None (processed locally only)
 - Required: Yes, core functionality
 
 **ACCESS_COARSE_LOCATION**
 - Purpose: Access approximate location from network
 - Used for: Fallback location data when GPS is unavailable
+- Data shared: None (processed locally only)
 - Required: Yes, core functionality
 
-#### 3.2 Network Permissions
+#### 4.2 Network Permissions
 
 **INTERNET**
 - Purpose: Download map tiles from OpenStreetMap
 - Used for: Display map background and satellite positions
+- Data shared: Only map view area to OpenStreetMap (not precise location)
 - Required: Yes, for map functionality
 
 **ACCESS_NETWORK_STATE**
 - Purpose: Check network connectivity status
 - Used for: Determine if network is available for map downloads
+- Data shared: None
 - Required: Yes, for map functionality
 
-#### 3.3 Storage Permissions
+#### 4.3 Storage Permissions
 
 **WRITE_EXTERNAL_STORAGE** (Android 12 and below)
 - Purpose: Cache map tiles locally
 - Used for: Store downloaded map data for offline use
+- Data shared: None
 - Required: No, optional for better performance
 - Note: Android 13+ uses scoped storage automatically
 
-### 4. Data Security
+### 5. Data Security & Privacy Guarantees
 
-- **Local Storage Only**: All data is stored locally on your device
-- **No Cloud Sync**: We do not synchronize data to cloud servers
-- **No Third-Party Sharing**: Location and satellite data are never shared with third parties
-- **Encryption**: Map cache uses standard Android file system encryption
-- **No Analytics**: We do not collect usage analytics or crash reports
-- **No Advertising**: The application contains no advertisements or tracking
+- ✅ **NO Personal Data Collection**: We do not collect any personal user data
+- ✅ **NO Cloud Sync**: All data remains exclusively on your device
+- ✅ **NO Third-Party Sharing**: No data is shared with any third parties
+- ✅ **NO Analytics**: We do not track usage or collect analytics
+- ✅ **NO Advertising**: No ads, no tracking, no profiling
+- ✅ **NO User Accounts**: No login required, no user identification
+- ✅ **NO Telemetry**: No telemetry or crash reporting
+- ✅ **Local Encryption**: Map cache uses standard Android file system encryption
+- ✅ **Privacy by Design**: Minimal data processing, local-only architecture
 
-### 5. Third-Party Services
+### 6. Third-Party Services
 
-#### 5.1 OpenStreetMap (OSMDroid)
+#### 6.1 OpenStreetMap (OSMDroid)
 
 **Service**: Map tile provider
-**Data Shared**: Your map view area (not precise location)
+**Data Shared**: Only your map view area (not precise location)
 **Privacy**: https://wiki.openstreetmap.org/wiki/Privacy_Policy
 **Purpose**: Display map background and satellite positions
 **Opt-out**: Map functionality will be unavailable
+**Note**: No personal data is shared
 
-#### 5.2 Google Play Services
+#### 6.2 Google Play Services
 
 **Service**: Location services framework
 **Data Shared**: None directly; used for system-level location access
 **Privacy**: https://policies.google.com/privacy
 **Purpose**: Provide GNSS status callbacks and location updates
+**Note**: No personal data is shared
 
-### 6. Data Retention and Deletion
+### 7. Data Retention and Deletion
 
 - **Automatic Deletion**: All data is automatically deleted when the application is closed
 - **Manual Deletion**: Clear application cache through Android Settings
 - **No Backup**: Data is not backed up to cloud services
 - **User Control**: You can disable location access at any time through Android Settings
+- **No Permanent Storage**: No data is stored permanently on your device
 
-### 7. Children's Privacy
+### 8. Children's Privacy
 
-The Application is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to delete such information and terminate the child's use of the Application.
+The Application is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. Since we do not collect any personal data from anyone, this protection is absolute.
 
-### 8. Changes to This Privacy Policy
+### 9. Changes to This Privacy Policy
 
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy.
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last Updated\" date at the top of this Privacy Policy.
 
-### 9. Contact Us
+### 10. Contact Us
 
 If you have any questions about this Privacy Policy, please contact us at:
 
@@ -183,15 +222,40 @@ If you have any questions about this Privacy Policy, please contact us at:
 
 ### 1. Giriş
 
-GPS Test Pro ("Uygulama", "biz", "bizim") GPS Test Pro mobil uygulamasını işletmektedir. Bu sayfa, Uygulamayı kullanırken kişisel verilerin toplanması, kullanılması ve açıklanmasına ilişkin politikalarımız hakkında sizi bilgilendirir.
+GPS Test Pro (\"Uygulama\", \"biz\", \"bizim\") GPS Test Pro mobil uygulamasını işletmektedir.
 
-Uygulamayı sağlamak ve geliştirmek için verilerinizi kullanırız. Uygulamayı kullanarak, bu politikaya uygun olarak bilgi toplanması ve kullanılmasına rıza göstermiş olursunuz.
+**⚠️ ÖNEMLİ UYARI: GPS Test Pro hiçbir kişisel kullanıcı verisi toplamaz, depolamaz veya iletmez.**
 
-### 2. Bilgi Toplama ve Kullanım
+Tüm veri işleme yalnızca cihazınızda gerçekleşir. Sizin hakkınızda hiçbir kişisel bilgi toplamayız, kullanmayız, paylaşmayız veya depolamayız. Bu uygulama gizlilik-öncelikli ilkelerle tasarlanmıştır ve hiçbir izleme, analitik veya kullanıcı profili oluşturmaz.
 
-#### 2.1 Konum Verileri
+### 2. KİŞİSEL VERİ TOPLAMA YOK - NET AÇIKLAMA
 
-**Topladığımız veriler:**
+**GPS Test Pro hiçbir kişisel kullanıcı verisi toplamaz.**
+
+Tamamen açık ve şeffaf olarak belirtiyoruz: GPS Test Pro sizin hakkınızda hiçbir kişisel bilgi toplamaz, depolamaz, iletmez veya paylaşmaz. Buna şunlar dahildir:
+
+- ❌ Ad, e-posta adresi veya iletişim bilgisi yok
+- ❌ Kullanıcı hesapları veya kimlik doğrulama verileri yok
+- ❌ Tarama geçmişi veya kullanım desenleri yok
+- ❌ Cihaz tanımlayıcıları veya reklam kimlikleri yok
+- ❌ Analitik veya kilitlenme raporları yok
+- ❌ İzleme çerezleri veya pikselleri yok
+- ❌ Kişisel tercihler veya ayarlar yok (yerel uygulama ayarları hariç)
+- ❌ Demografik bilgi yok
+- ❌ Davranışsal veri yok
+- ❌ Üçüncü taraflarla veri paylaşımı yok
+- ❌ Kullanıcı profili oluşturma yok
+- ❌ Telemetri yok
+
+**Tüm veriler yalnızca cihazınızda yerel olarak işlenir. Hiçbir şey harici sunuculara iletilmez.**
+
+### 3. YALNIZCA YEREL VERİ İŞLEME
+
+Aşağıdaki teknik veriler uygulama işlevselliği için YALNIZCA cihazınızda işlenir:
+
+#### 3.1 Konum Verileri (Yalnızca Yerel)
+
+**Yerel olarak işlediğimiz veriler:**
 - GPS koordinatları (enlem, boylam)
 - İrtifa bilgisi
 - Hız ve yön verileri
@@ -210,10 +274,11 @@ Uygulamayı sağlamak ve geliştirmek için verilerinizi kullanırız. Uygulamay
 - Bellekte maksimum 100 konum noktası tutulur
 - Uygulama kapatıldığında veriler silinir
 - Konum verileri hiçbir zaman harici sunuculara iletilmez
+- Konum verileri kalıcı olarak depolanmaz
 
-#### 2.2 GNSS/Uydu Verileri
+#### 3.2 GNSS/Uydu Verileri (Yalnızca Yerel)
 
-**Topladığımız veriler:**
+**Yerel olarak işlediğimiz veriler:**
 - Uydu ID (SVID)
 - Takımyıldız tipi (GPS, GLONASS, GALILEO, BEIDOU, QZSS, IRNSS, SBAS)
 - Sinyal gücü (CN0 dB-Hz)
@@ -233,10 +298,11 @@ Uygulamayı sağlamak ve geliştirmek için verilerinizi kullanırız. Uygulamay
 - Uydu verileri yalnızca gerçek zamanlı olarak işlenir
 - Uydu verileri kalıcı olarak depolanmaz
 - GPS güncellemeleri durduğunda veriler silinir
+- Uydu verileri hiçbir yere iletilmez
 
-#### 2.3 Sensör Verileri
+#### 3.3 Sensör Verileri (Yalnızca Yerel)
 
-**Topladığımız veriler:**
+**Yerel olarak işlediğimiz veriler:**
 - İvmeölçer (accelerometer) okumaları
 - Manyetometre (pusula) okumaları
 - Sensör doğruluk durumu
@@ -250,9 +316,9 @@ Uygulamayı sağlamak ve geliştirmek için verilerinizi kullanırız. Uygulamay
 - Sensör verileri yalnızca gerçek zamanlı olarak işlenir
 - Sensör verileri depolanmaz veya iletilmez
 
-#### 2.4 Cihaz Bilgileri
+#### 3.4 Cihaz Bilgileri (Yalnızca Yerel)
 
-**Topladığımız veriler:**
+**Yerel olarak işlediğimiz veriler:**
 - Cihaz modeli ve üreticisi
 - Android işletim sistemi sürümü
 - Uygulama sürümü
@@ -266,85 +332,97 @@ Uygulamayı sağlamak ve geliştirmek için verilerinizi kullanırız. Uygulamay
 **Veri saklama:**
 - Cihaz bilgileri depolanmaz
 - Yalnızca etkin uygulama oturumu sırasında kullanılır
+- Hiçbir yere iletilmez
 
-### 3. İzinler Açıklaması
+### 4. İzinler Açıklaması
 
 Uygulama aşağıdaki izinleri talep etmektedir:
 
-#### 3.1 Konum İzinleri
+#### 4.1 Konum İzinleri
 
 **ACCESS_FINE_LOCATION**
 - Amaç: Kesin GPS konum verilerine erişim
 - Kullanım: Gerçek zamanlı konum takibi ve uydu sinyal analizi
+- Paylaşılan Veri: Hiçbiri (yalnızca yerel olarak işlenir)
 - Gerekli: Evet, temel işlevsellik
 
 **ACCESS_COARSE_LOCATION**
 - Amaç: Ağdan yaklaşık konum verilerine erişim
 - Kullanım: GPS kullanılamadığında yedek konum verileri
+- Paylaşılan Veri: Hiçbiri (yalnızca yerel olarak işlenir)
 - Gerekli: Evet, temel işlevsellik
 
-#### 3.2 Ağ İzinleri
+#### 4.2 Ağ İzinleri
 
 **INTERNET**
 - Amaç: OpenStreetMap'ten harita kutucuklarını indirmek
 - Kullanım: Harita arka planı ve uydu konumlarını göstermek
+- Paylaşılan Veri: Yalnızca harita görünüm alanı OpenStreetMap'e (kesin konum değil)
 - Gerekli: Evet, harita işlevselliği için
 
 **ACCESS_NETWORK_STATE**
 - Amaç: Ağ bağlantı durumunu kontrol etmek
 - Kullanım: Harita indirmeleri için ağın kullanılabilir olup olmadığını belirlemek
+- Paylaşılan Veri: Hiçbiri
 - Gerekli: Evet, harita işlevselliği için
 
-#### 3.3 Depolama İzinleri
+#### 4.3 Depolama İzinleri
 
 **WRITE_EXTERNAL_STORAGE** (Android 12 ve altı)
 - Amaç: Harita kutucuklarını yerel olarak önbelleğe almak
 - Kullanım: İndirilen harita verilerini depolamak
+- Paylaşılan Veri: Hiçbiri
 - Gerekli: Hayır, daha iyi performans için isteğe bağlı
 - Not: Android 13+ otomatik olarak kapsamlı depolama kullanır
 
-### 4. Veri Güvenliği
+### 5. Veri Güvenliği & Gizlilik Garantileri
 
-- **Yalnızca Yerel Depolama**: Tüm veriler cihazınızda yerel olarak depolanır
-- **Bulut Senkronizasyonu Yok**: Verileri bulut sunucularına senkronize etmeyiz
-- **Üçüncü Taraf Paylaşımı Yok**: Konum ve uydu verileri hiçbir zaman üçüncü taraflarla paylaşılmaz
-- **Şifreleme**: Harita önbelleği standart Android dosya sistemi şifrelemesini kullanır
-- **Analitik Yok**: Kullanım analitikleri veya kilitlenme raporları toplamayız
-- **Reklam Yok**: Uygulama reklam veya izleme içermez
+- ✅ **KİŞİSEL VERİ TOPLAMA YOK**: Hiçbir kişisel kullanıcı verisi toplamayız
+- ✅ **BULUT SENKRONİZASYONU YOK**: Tüm veriler yalnızca cihazınızda kalır
+- ✅ **ÜÇÜNCÜ TARAF PAYLAŞIMI YOK**: Hiçbir veri üçüncü taraflarla paylaşılmaz
+- ✅ **ANALİTİK YOK**: Kullanım analitikleri toplamayız
+- ✅ **REKLAM YOK**: Reklam, izleme veya profil oluşturma yok
+- ✅ **KULLANICI HESABI YOK**: Giriş gerekli değil, kullanıcı tanımlaması yok
+- ✅ **TELEMETRİ YOK**: Telemetri veya kilitlenme raporlaması yok
+- ✅ **YEREL ŞİFRELEME**: Harita önbelleği standart Android dosya sistemi şifrelemesini kullanır
+- ✅ **GİZLİLİK TASARIMI**: Minimal veri işleme, yalnızca yerel mimari
 
-### 5. Üçüncü Taraf Hizmetleri
+### 6. Üçüncü Taraf Hizmetleri
 
-#### 5.1 OpenStreetMap (OSMDroid)
+#### 6.1 OpenStreetMap (OSMDroid)
 
 **Hizmet**: Harita kutucuğu sağlayıcısı
-**Paylaşılan Veriler**: Harita görünüm alanınız (kesin konum değil)
+**Paylaşılan Veriler**: Yalnızca harita görünüm alanınız (kesin konum değil)
 **Gizlilik**: https://wiki.openstreetmap.org/wiki/Privacy_Policy
 **Amaç**: Harita arka planı ve uydu konumlarını göstermek
 **Devre Dışı Bırakma**: Harita işlevselliği kullanılamaz hale gelecektir
+**Not**: Hiçbir kişisel veri paylaşılmaz
 
-#### 5.2 Google Play Hizmetleri
+#### 6.2 Google Play Hizmetleri
 
 **Hizmet**: Konum hizmetleri çerçevesi
 **Paylaşılan Veriler**: Doğrudan hiçbiri; sistem düzeyinde konum erişimi için kullanılır
 **Gizlilik**: https://policies.google.com/privacy
 **Amaç**: GNSS durum geri çağrıları ve konum güncellemeleri sağlamak
+**Not**: Hiçbir kişisel veri paylaşılmaz
 
-### 6. Veri Saklama ve Silme
+### 7. Veri Saklama ve Silme
 
 - **Otomatik Silme**: Uygulama kapatıldığında tüm veriler otomatik olarak silinir
 - **Manuel Silme**: Android Ayarları aracılığıyla uygulama önbelleğini temizleyin
 - **Yedekleme Yok**: Veriler bulut hizmetlerine yedeklenmez
 - **Kullanıcı Kontrolü**: Android Ayarları aracılığıyla konum erişimini istediğiniz zaman devre dışı bırakabilirsiniz
+- **Kalıcı Depolama Yok**: Cihazınızda kalıcı olarak depolanan veri yok
 
-### 7. Çocukların Gizliliği
+### 8. Çocukların Gizliliği
 
-Uygulama 13 yaşından küçük çocuklar için tasarlanmamıştır. 13 yaşından küçük çocuklardan bilerek kişisel bilgi toplamayız. 13 yaşından küçük bir çocuğun bize kişisel bilgi sağladığını öğrenirsek, bu tür bilgileri silmek ve çocuğun Uygulamayı kullanmasını sonlandırmak için adımlar atarız.
+Uygulama 13 yaşından küçük çocuklar için tasarlanmamıştır. 13 yaşından küçük çocuklardan bilerek kişisel bilgi toplamayız. Hiçbir kişiden kişisel veri toplamadığımız için, bu koruma mutlaktır.
 
-### 8. Bu Gizlilik Politikasında Değişiklikler
+### 9. Bu Gizlilik Politikasında Değişiklikler
 
-Gizlilik Politikamızı zaman zaman güncelleyebiliriz. Herhangi bir değişiklik hakkında sizi bu sayfada yeni Gizlilik Politikasını yayınlayarak ve bu Gizlilik Politikasının en üstündeki "Son Güncelleme" tarihini güncelleyerek bilgilendireceğiz.
+Gizlilik Politikamızı zaman zaman güncelleyebiliriz. Herhangi bir değişiklik hakkında sizi bu sayfada yeni Gizlilik Politikasını yayınlayarak ve bu Gizlilik Politikasının en üstündeki \"Son Güncelleme\" tarihini güncelleyerek bilgilendireceğiz.
 
-### 9. Bize Ulaşın
+### 10. Bize Ulaşın
 
 Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen bize şu adresten ulaşın:
 
@@ -358,17 +436,17 @@ Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen bize şu a
 
 ### GDPR Compliance (AB Genel Veri Koruma Yönetmeliği)
 
-- ✅ Explicit consent for location data collection
-- ✅ Right to access personal data
+- ✅ No personal data collection (full compliance)
+- ✅ Right to access personal data (N/A - no data collected)
 - ✅ Right to deletion (automatic upon app closure)
 - ✅ Data portability (local storage only)
-- ✅ Privacy by design (minimal data collection)
+- ✅ Privacy by design (zero personal data collection)
 
 ### CCPA Compliance (California Consumer Privacy Act)
 
-- ✅ Disclosure of data collection practices
-- ✅ Right to know what data is collected
-- ✅ Right to delete personal information
+- ✅ Disclosure of data collection practices (no personal data collected)
+- ✅ Right to know what data is collected (none)
+- ✅ Right to delete personal information (N/A - no data collected)
 - ✅ Right to opt-out of data sales (no data sales occur)
 - ✅ Non-discrimination for exercising privacy rights
 
@@ -376,7 +454,7 @@ Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen bize şu a
 
 - ✅ Clear privacy policy in English
 - ✅ Explanation of all permissions
-- ✅ Data collection and usage practices disclosed
+- ✅ Data collection and usage practices disclosed (no personal data)
 - ✅ Third-party services disclosed
 - ✅ Data retention policies explained
 - ✅ Contact information provided
@@ -385,7 +463,7 @@ Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen bize şu a
 ### App Store Requirements (iOS)
 
 - ✅ Privacy practices documented
-- ✅ Data collection minimized
+- ✅ Data collection minimized (zero personal data)
 - ✅ No tracking or analytics
 - ✅ Secure data handling
 - ✅ User control over permissions
