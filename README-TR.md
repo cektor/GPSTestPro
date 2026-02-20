@@ -1,7 +1,7 @@
 # GPS Test Pro - Profesyonel GNSS Test Uygulaması
 
 <div align="center">
-  <img src="app/src/main/res/drawable/gpslogo.png" alt="GPS Test Pro Logo" width="150" height="150"/>
+  <img src="gpslogo.png" alt="GPS Test Pro Logo" width="150" height="150"/>
   <br/><br/>
   
 [![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://www.android.com/)
@@ -192,7 +192,7 @@
 ### Adımlar
 1. **Depoyu klonlayın**
    ```bash
-   git clone https://github.com/kullaniciadi/gps-test-pro.git
+   git clone https://github.com/cektor/GPSTestPro.git
    cd gps-test-pro
    ```
 
@@ -353,17 +353,17 @@ Bu proje **eğitim amaçlı** geliştirilmiştir.
 
 ## 🙏 Teşekkürler
 
-- Harita entegrasyonu için [OSMDroid](https://github.com/osmdroid/osmdroid)
 - Harika UI framework için Android Jetpack Compose ekibi
 - Tasarım kılavuzları için Material Design ekibi
+- Harita verileri için OpenStreetMap katkıda bulunanlar
 
 ---
 
 ## 📞 Destek
 
 Sorunlar, sorular veya öneriler için:
-- [Issue](https://github.com/kullaniciadi/gps-test-pro/issues) açın
-- İletişim: [email@ornek.com]
+- [Issue](https://github.com/cektor/GPSTestPro/issues) açın
+- İletişim: [info@algyazilim.com]
 
 ---
 

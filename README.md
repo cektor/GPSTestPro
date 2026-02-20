@@ -192,7 +192,7 @@ Built from scratch using **Kotlin** and **Jetpack Compose** with a modern MVVM a
 ### Steps
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/gps-test-pro.git
+   git clone https://github.com/cektor/GPSTestPro.git
    cd gps-test-pro
    ```
 
@@ -356,17 +356,17 @@ This project is developed for **educational purposes**.
 
 ## 🙏 Acknowledgments
 
-- [OSMDroid](https://github.com/osmdroid/osmdroid) for map integration
 - Android Jetpack Compose team for the amazing UI framework
 - Material Design team for design guidelines
+- OpenStreetMap contributors for map data
 
 ---
 
 ## 📞 Support
 
 For issues, questions, or suggestions:
-- Open an [Issue](https://github.com/yourusername/gps-test-pro/issues)
-- Contact: [your-email@example.com]
+- Open an [Issue](https://github.com/cektor/GPSTestPro/issues)
+- Contact: [info@algyazilim.com]
 
 ---
 
